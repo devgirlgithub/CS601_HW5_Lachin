@@ -1,0 +1,99 @@
+
+* {
+	box-sizing: border-box;
+	
+	font: bold 14px Arial, sans-serif;
+}
+
+html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 20%, #ccc);
+	background-size: cover;
+}
+/* Table */	
+table {
+	margin: 35px 52px;
+  	border-collapse: collapse;
+  	border-spacing: 0;
+	border: 1px solid #12aff1;
+}
+td, th {
+	padding: .2em .7em;
+	border: 1px solid #12aff1;
+}
+table td {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/* Input box for entering */
+td input.inputbox {
+	color: blue;
+	background: #9dd2ea;
+	border-radius: 3px;	
+	clear: both;
+	width: 90%; 
+	padding-left: 5px; 
+	padding-right: 0;
+	text-indent: 6%; /* make some padding left */
+}
+td input.inputbox:hover { /* don't hover */
+	font-style: normal; 
+	color: blue;
+}
+/* Each button */
+td input {
+	color: #363CFA;
+	padding: 1em 1.6em 1.7em 1em;
+	width: 4px;
+	height: 2px;
+}
+td input:hover { /* this is hovering for links that are in the table only */
+	font-style: italic; 
+	color: #12aff1;
+	}
+
+thead, tfoot { 
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    background-color: #12aff1;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#calculator {
+	background: #9dd2ea;
+	background: linear-gradient(#9dd2ea, #8bceec);
+	border-radius: 3px;
+	box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttonUI {
+    background-color: #4CAF50;
+    color: black;
+    padding: 15px 32px;
+    margin: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
+
+/* Using some animation for this button to stand out */
+.button {
+    background-color: #4CAF50; 
+    animation: mymove 5s infinite;
+    color: black;
+    padding: 15px 32px;
+    margin: 35px 32px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {outline: 15px solid #4CAF50;}
+}

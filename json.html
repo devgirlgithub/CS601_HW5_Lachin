@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Isabel Calculator</title>	
+	<link rel="stylesheet" href="styles/calculator.css">	
+</head>
+
+<body onload="hideCalculator()">	
+	<script src="calculator.js" type="text/javascript"></script>
+
+	<!-- onclick event buttons to start the program -->
+	<button class="buttonUI" onclick="startCalculatorUI()">View Calculator</button>
+	<button class="button" onclick="startCalculator()">Interactive Calculator (Javascript)</button>
+
+	<!-- calculator using the UI with buttons -->
+	<form name="calculator">	
+		<table>
+		<tr>
+		<td>
+			<input class="inputbox" type="text" name="text" onkeypress="detect_enterPress(event)">
+		</td>
+		</tr>
+			<tr>
+			<td class="keys">
+				<div>
+				<input type="button" value="1" onclick="calculate(1)">
+				<input type="button" value="2" onclick="calculate(2)">
+				<input type="button" value="3" onclick="calculate(3)">
+				<input type="button" value="+" onclick="calculate('+')">
+				<br>
+				<input type="button" value="4" onclick="calculate(4)">
+				<input type="button" value="5" onclick="calculate(5)">
+				<input type="button" value="6" onclick="calculate(6)">
+				<input type="button" value="-" onclick="calculate('-')">
+				<br>
+				<input type="button" value="7" onclick="calculate(7)">
+				<input type="button" value="8" onclick="calculate(8)">
+				<input type="button" value="9" onclick="calculate(9)">
+				<input type="button" value="*" onclick="calculate('*')">
+				<br>
+				<input type="button" value="C" onclick="calculate(' ')">
+				<input type="button" value="0" onclick="calculate(0)">
+				<input type="button" value="=" onclick="calculate('=')">
+				<input type="button" value="/" onclick="calculate('/')">
+				<br>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>
+
